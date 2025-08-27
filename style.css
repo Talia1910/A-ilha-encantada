@@ -11,3 +11,9 @@ img{
   object-fit: cover;
   
 }
+.frase-posicionada {
+    position: absolute;
+    top: 150px;   
+    left: 80px;    
+    width: 300px;   
+}
