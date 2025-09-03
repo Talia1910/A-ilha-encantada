@@ -2,25 +2,43 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A Ilha Encantada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Ilha Encantada - Capítulo 2</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    
-    <p>Descobrir o que está atrás da cachoeira</p>
-  </header>
+  <div class="container">
+    <header>
+      <p>Descobrir o que está atrás da cachoeira</p>
+    </header>
 
-  <section>
+    <section>
+      <p>Vocês acabam de descobrir um lar secreto para criaturas perseguidas que precisam de ajuda que estão em extinção.</p>
+    </section>
+    
+    <nav>
+      <ul>
+        <li><a href="pag8bru.html">Cuidar da ilha</a></li>
+        <li><a href="pag10bru.html">Ignorar e voltar à vida normal</a></li>
+      </ul>
+    </nav>
+  </div>
   
-    <p>Vocês acabam de descobrir um lar secreto para criaturas perseguidas que precisam de ajuda que estão em extinsão.</p>
-  </section>
-  <nav>
-    <ul>
-      <li><a href="pag8bru.html">Cuidar da ilha</a></li>
-      <li><a href="pag10bru.html">Ignorar e voltar à vida normal</a></li>
-    </ul>
-  </nav>
+  <script>
+    // Adicionando efeitos interativos simples
+    document.addEventListener('DOMContentLoaded', function() {
+      var links = document.querySelectorAll('a');
+      
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('mouseover', function() {
+          this.style.transform = 'scale(1.05)';
+        });
+        
+        links[i].addEventListener('mouseout', function() {
+          this.style.transform = 'scale(1)';
+        });
+      }
+    });
+  </script>
 </body>
 </html>
